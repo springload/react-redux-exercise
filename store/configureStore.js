@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
-import todoApp from '../reducers';
+import exerciseApp from '../reducers';
 
 const createStoreWithMiddleware = applyMiddleware(
     thunkMiddleware,
@@ -9,7 +9,7 @@ const createStoreWithMiddleware = applyMiddleware(
 )(createStore);
 
 export default function configureStore(initialState) {
-    const store = createStoreWithMiddleware(todoApp, initialState);
+    const store = createStoreWithMiddleware(exerciseApp, initialState);
 
     if (module.hot) {
         // Enable Webpack hot module replacement for reducers

@@ -1,22 +1,8 @@
-let nextTodoId = 0
-export const addTodo = (text) => {
-  return {
-    type: 'ADD_TODO',
-    id: nextTodoId++,
-    text
-  }
-}
+export const CHANGE_VALUE = 'CHANGE_VALUE';
 
-export const setVisibilityFilter = (filter) => {
+export const changeValue = (event) => {
   return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter
-  }
-}
-
-export const toggleTodo = (id) => {
-  return {
-    type: 'TOGGLE_TODO',
-    id
+    type: CHANGE_VALUE,
+    newValue: event.target.value,
   }
 }

@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
-import todos from './todos'
-import visibilityFilter from './visibilityFilter'
+import exercise0 from './exercise0'
+// import exercise1 from './exercise1'
+// import exercise2 from './exercise2'
 
-const todoApp = combineReducers({
-  todos,
-  visibilityFilter
+const exerciseApp = combineReducers({
+  exercise0,
+  // exercise1,
+  // exercise2,
 })
 
-export default todoApp
+export default exerciseApp
