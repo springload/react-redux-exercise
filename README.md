@@ -11,9 +11,11 @@ Exercise to understand better react-redux, how it works and how to use it.
 ### with images
 
 ![alt Redux image](./readme/redux1.jpg)
+
 Source http://staltz.com/unidirectional-user-interface-architectures.html
 
 ![alt Redux image](./readme/redux2.png)
+
 Source http://blog.tighten.co/react-101-using-redux
 
 ### with words
