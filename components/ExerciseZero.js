@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-export default class ExerciseZero extends React.Component {
+// This component should stay "dumb"
+// It should not have it's own state and should only use props
+class ExerciseZero extends React.Component {
     render() {
         const { value } = this.props;
         return (
@@ -23,3 +25,12 @@ export default class ExerciseZero extends React.Component {
         );
     }
 }
+
+// it's considered better practice to specify into 
+// the component all the props you are expecting.
+ExerciseZero.propTypes = {
+    value: React.PropTypes.string.isRequired,
+    changeValue: React.PropTypes.func.isRequired,
+};
+
+export default ExerciseZero;

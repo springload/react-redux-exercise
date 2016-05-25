@@ -1,10 +1,11 @@
 import React from 'react'
-import Footer from './Footer'
 import IntelligentExerciseZero from '../containers/IntelligentExerciseZero'
+import IntelligentExerciseOne from '../containers/IntelligentExerciseOne'
 
 const App = () => (
   <div>
     <IntelligentExerciseZero />
+    <IntelligentExerciseOne />
   </div>
 )
 
