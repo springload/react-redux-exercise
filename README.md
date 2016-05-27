@@ -2,6 +2,11 @@
 Exercise to understand better react-redux, how it works and how to use it.
 
 ## Install
+
+`git clone https://github.com/vincentaudebert/react-redux-exercise.git`
+
+`cd react-redux-exercise`
+
 `npm install`
 
 `npm run start`
