@@ -1,3 +1,6 @@
+// This is an "intelligent" component which is taking a "dump" component and adds to it
+// some intelligence using the props.
+// Meet me in ../actions/index.js after you've understood this file
 import { connect } from 'react-redux';
 import ExerciseZero from '../components/ExerciseZero';
 import * as actions from '../actions';

@@ -1,3 +1,8 @@
+// This is the "root" of your App
+// It's basically wrapping the App component inside a Provider component which will
+// ensure that the app store is accessible across all the app
+// Meet me in /components/App.js
+
 import 'babel-polyfill'
 import React from 'react'
 import { render } from 'react-dom'

@@ -1,14 +1,21 @@
+// This is what's wrapped into an "intelligent" component.
+// This is a "dumb" component
+// Ideally it should be a stateless component
+// https://facebook.github.io/react/docs/reusable-components.html#stateless-functions
+// It's basically just displaying HTML and using the given props.
+// Meet me in ../containers/IntelligentExerciseZero.js once you've understood this file
+
 import * as React from 'react';
 
 // This component should stay "dumb"
 // It should not have it's own state and should only use props
 class ExerciseZero extends React.Component {
     render() {
-        const { value } = this.props;
+        const { value, changeValue } = this.props;
         return (
             <div>
                 <h1>Exercise 0</h1>
-                <div style={{marginBottom: '10px'}}><small>Use this exercise as a reference for a working example</small></div>
+                <div style={{marginBottom: '10px'}}><i>Use this exercise as a reference for a working example. Follow me through the file comments.</i></div>
                 <div style={{marginBottom: '5px'}}>Value: {value}</div>
                 <div>
                     <label>
@@ -16,8 +23,8 @@ class ExerciseZero extends React.Component {
                         <input 
                             type="text" 
                             name="exerciseZero" 
-                            value={this.props.value}
-                            onChange={this.props.changeValue} 
+                            value={value}
+                            onChange={changeValue} 
                         />
                     </label>
                 </div>
