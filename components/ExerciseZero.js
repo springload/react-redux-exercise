@@ -15,7 +15,8 @@ class ExerciseZero extends React.Component {
         return (
             <div>
                 <h1>Exercise 0</h1>
-                <div style={{marginBottom: '10px'}}><i>Use this exercise as a reference for a working example. Follow me through the file comments.</i></div>
+                <div style={{marginBottom: '10px'}}><i>Use this exercise as a reference for a working example. Follow me through the file comments.<br />
+                Meet me in /index.js</i></div>
                 <div style={{marginBottom: '5px'}}>Value: {value}</div>
                 <div>
                     <label>
