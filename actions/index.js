@@ -1,8 +1,6 @@
 // Ok, let's say the user started typing something in the input of ExerciseZero
-// The onClick function is triggered.
-// This one comes from IntelligentExerciseZero
-// and it dispatches an action
-// This action (changeValue) is defined here
+// 1) The onChange function is triggered in IntelligentExerciseZero,
+// 2) It dispatches an action. This action (changeValue) is defined here
 // Meet me in ../reducers/exercise0.js once you've understood this file
 
 // it's considered good practice to have all the types sitting as constants.
