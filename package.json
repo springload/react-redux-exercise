@@ -1,6 +1,6 @@
 {
   "name": "react-redux-exercise",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React redux exercise",
   "scripts": {
     "start": "node server.js",
