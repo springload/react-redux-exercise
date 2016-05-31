@@ -1,15 +1,18 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
-import exerciseApp from '../reducers';
-
-const createStoreWithMiddleware = applyMiddleware(
-    thunkMiddleware,
-    createLogger()
-)(createStore);
+import rootReducer from '../reducers';
 
 export default function configureStore(initialState) {
-    const store = createStoreWithMiddleware(exerciseApp, initialState);
+    const middleware = [
+        thunkMiddleware,
+        createLogger(),
+    ];
+
+    const store = createStore(rootReducer, initialState, compose(
+        applyMiddleware(...middleware),
+        window.devToolsExtension ? window.devToolsExtension() : func => func
+    ));
 
     if (module.hot) {
         // Enable Webpack hot module replacement for reducers
