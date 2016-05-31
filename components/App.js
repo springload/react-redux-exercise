@@ -7,7 +7,7 @@ import IntelligentExerciseTwo from '../containers/IntelligentExerciseTwo';
 // This is where you build the skeleton of your App
 // by displaying the right intelligent components
 // Meet me in ../components/ExerciseZero after you've understood this file
-const App = React.createClass({
+const App = React.createClass({ // eslint-disable-line react/prefer-stateless-function
     render() {
         return (
             <div>

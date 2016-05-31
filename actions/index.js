@@ -4,10 +4,7 @@
 // and it dispatches an action
 // This action (changeValue) is defined here
 // Meet me in ../reducers/exercise0.js once you've understood this file
-
-// it's considered good practice to have all the types sitting as constants.
-export const CHANGE_VALUE = 'CHANGE_VALUE';
-export const BOX_TICKED = 'BOX_TICKED';
+import actionTypes from './actionTypes';
 
 // This is an action
 // it get some params (here an event)
@@ -15,7 +12,7 @@ export const BOX_TICKED = 'BOX_TICKED';
 // and some other params which will be used inside the reducer
 export const changeValue = (event) => {
     return {
-        type: CHANGE_VALUE,
+        type: actionTypes.CHANGE_VALUE,
         newValue: event.target.value,
     };
 };
@@ -27,7 +24,7 @@ export const buttonClicked = () => {
 
 export const boxTicked = (event) => {
     return {
-        type: BOX_TICKED,
+        type: actionTypes.BOX_TICKED,
         hasTickedBox: event.target.value,
     };
 };

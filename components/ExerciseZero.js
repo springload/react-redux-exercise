@@ -1,17 +1,22 @@
+import React from 'react';
+
 // This is what's wrapped into an "intelligent" component.
-// This is a "dumb" component
-// Ideally it should be a stateless component
-// https://facebook.github.io/react/docs/reusable-components.html#stateless-functions
+// This is a "dumb" component: it just displays data and calls functions,
+// oblivious to the fact that Redux is used on the project.
 // It's basically just displaying HTML and using the given props.
 // Meet me in ../containers/IntelligentExerciseZero.js once you've understood this file
+const ExerciseZero = React.createClass({ // eslint-disable-line react/prefer-stateless-function
+    // it's considered better practice to specify into
+    // the component all the props you are expecting.
+    // Other developers then know what they can provide or need to provide.
+    propTypes: {
+        value: React.PropTypes.string.isRequired,
+        changeValue: React.PropTypes.func.isRequired,
+    },
 
-import * as React from 'react';
-
-// This component should stay "dumb"
-// It should not have it's own state and should only use props
-class ExerciseZero extends React.Component {
     render() {
         const { value, changeValue } = this.props;
+
         return (
             <div>
                 <h1>Exercise 0</h1>
@@ -36,14 +41,7 @@ class ExerciseZero extends React.Component {
                 </div>
             </div>
         );
-    }
-}
-
-// it's considered better practice to specify into
-// the component all the props you are expecting.
-ExerciseZero.propTypes = {
-    value: React.PropTypes.string.isRequired,
-    changeValue: React.PropTypes.func.isRequired,
-};
+    },
+});
 
 export default ExerciseZero;

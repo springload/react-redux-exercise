@@ -1,8 +1,12 @@
 import * as React from 'react';
 
 // This component should stay "dumb"
-// It should not have it's own state and should only use props
-class ExerciseOne extends React.Component {
+const ExerciseOne = React.createClass({ // eslint-disable-line react/prefer-stateless-function
+    propTypes: {
+        name: React.PropTypes.string.isRequired,
+        buttonClicked: React.PropTypes.func.isRequired,
+    },
+
     render() {
         const { name, buttonClicked } = this.props;
         return (
@@ -16,12 +20,7 @@ class ExerciseOne extends React.Component {
                 </div>
             </div>
         );
-    }
-}
-
-ExerciseOne.propTypes = {
-    name: React.PropTypes.string.isRequired,
-    buttonClicked: React.PropTypes.func.isRequired,
-};
+    },
+});
 
 export default ExerciseOne;

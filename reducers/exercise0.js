@@ -15,7 +15,7 @@
 // in `state.exercise0.whatevervalue`
 // Get started on Exercise 1 once you've understood this file :)
 
-import { CHANGE_VALUE } from '../actions/';
+import actionTypes from '../actions/actionTypes';
 
 // Each reducer must define the initial state it works on.
 const initialState = {
@@ -26,7 +26,7 @@ const exercise0 = (state = initialState, action) => {
     // usually reducer core is just a switch on action.type
     // if you need to perform operations on values, create an external function and use it
     switch (action.type) {
-    case CHANGE_VALUE:
+    case actionTypes.CHANGE_VALUE:
         return Object.assign({}, state, {
             value: action.newValue,
         });
