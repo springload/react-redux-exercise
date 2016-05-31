@@ -1,27 +1,42 @@
-import * as React from 'react';
+import React from 'react';
 
-// This component should stay "dumb"
-// It should not have it's own state and should only use props
-class ExerciseOne extends React.Component {
+// This is what's wrapped into an "intelligent" component.
+// This is a "dumb" component: it just displays data and calls functions,
+// oblivious to the fact that Redux is used on the project.
+// It's basically just displaying HTML and using the given props.
+// Meet me in ../containers/IntelligentExerciseZero.js once you've understood this file
+const ExerciseZero = React.createClass({
     render() {
-        const { name, buttonClicked } = this.props;
+        const { value, changeValue } = this.props;
+
         return (
             <div>
-                <h1>Exercise 1</h1>
-                <div style={{marginBottom: '10px'}}><i>Implement the action for this Redux cycle</i></div>
-                <div style={{marginBottom: '5px'}}>{name} just got clicked!</div>
+                <h1>Exercise 0</h1>
+                <div style={{marginBottom: '10px'}}><i>Use this exercise as a reference for a working example. Follow me through the file comments.<br />
+                Meet me in /index.js</i></div>
+                <div style={{marginBottom: '5px'}}>Value: {value}</div>
                 <div>
-                    <button name="Button 1" onClick={buttonClicked}>Button 1</button>
-                    <button name="Button 2" onClick={buttonClicked}>Button 2</button>
+                    <label>
+                        Change me:
+                        <input
+                            type="text"
+                            name="exerciseZero"
+                            value={value}
+                            onChange={changeValue}
+                        />
+                    </label>
                 </div>
             </div>
         );
-    }
-}
+    },
+});
 
-ExerciseOne.propTypes = {
-    name: React.PropTypes.string.isRequired,
-    buttonClicked: React.PropTypes.func.isRequired,
+// it's considered better practice to specify into
+// the component all the props you are expecting.
+// Other developers then know what they can provide or need to provide.
+ExerciseZero.propTypes = {
+    value: React.PropTypes.string.isRequired,
+    changeValue: React.PropTypes.func.isRequired,
 };
 
-export default ExerciseOne;
+export default ExerciseZero;
