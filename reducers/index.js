@@ -6,11 +6,11 @@ import exercise2 from './exercise2';
 
 // this is combining all the reducers we have in the app
 // you can access each of them using state.exercise0, state.exercise1, etc...
-const exerciseApp = combineReducers({
+const rootReducer = combineReducers({
     exercise0,
     exercise1,
     exercise2,
   // exercise3,
 });
 
-export default exerciseApp;
+export default rootReducer;
