@@ -1,21 +1,19 @@
-// This is the "root" of your App
-// It's basically wrapping the App component inside a Provider component which will
-// ensure that the app store is accessible across all the app
-// Meet me in /components/App.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-import 'babel-polyfill'
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
 import configureStore from './store/configureStore';
-import { createStore } from 'redux'
-import App from './components/App'
+import App from './components/App';
 
 const store = configureStore();
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+// This is the "root" of your React App
+// The render function bootstraps React onto the page, in a specific element (#root).
+// A Redux Provider component is wrapping <App /> to provide access to the Redux store.
+// Meet me in /components/App.js
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
