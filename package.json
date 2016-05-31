@@ -7,11 +7,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincentaudebert/react-redux-exercise.git"
+    "url": "https://github.com/springload/react-redux-exercise.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vincentaudebert/react-redux-exercise/issues"
+    "url": "https://github.com/springload/react-redux-exercise/issues"
   },
   "author": "Vincent Audebert <vincent@springload.co.nz>",
   "contributors": [
@@ -19,7 +19,7 @@
       "name": "Thibaud Colas"
     },
   ],
-  "homepage": "https://github.com/vincentaudebert/react-redux-exercise",
+  "homepage": "https://github.com/springload/react-redux-exercise",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "keymirror": "^0.1.1",
