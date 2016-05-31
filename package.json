@@ -13,6 +13,12 @@
   "bugs": {
     "url": "https://github.com/vincentaudebert/react-redux-exercise/issues"
   },
+  "author": "Vincent Audebert <vincent@springload.co.nz>",
+  "contributors": [
+    {
+      "name": "Thibaud Colas"
+    },
+  ],
   "homepage": "https://github.com/vincentaudebert/react-redux-exercise",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
