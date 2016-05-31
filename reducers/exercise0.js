@@ -4,7 +4,7 @@
 // In this case this reducer is listening for "CHANGE_VALUE" action.
 // But it could listen for many more actions.
 
-// When an action occuers, it changes the store's state to reflect what that action conveys.
+// When an action occures, it changes the store's state to reflect what that action conveys.
 // The store state needs to be immutable: a new state is re-created from the old one, hence why we use `assign`.
 // Reducers ALWAYS return the state (new or unchanged).
 

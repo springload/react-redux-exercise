@@ -36,5 +36,5 @@ Basically, a Redux cycle works like this:
 - A user clicks on a button on the UI (for instance)
 - This button dispatches an action
 - This action will be managed by a reducer which is listening for one or many actions
-- This reducer will update the state using the store
+- This reducer will update the store state
 - The new store is then passed to the component which rerenders with the new value

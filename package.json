@@ -1,21 +1,19 @@
 {
-  "name": "redux-todos-example",
+  "name": "react-redux-exercise",
   "version": "0.0.0",
-  "description": "Redux Todos example",
+  "description": "React redux exercise",
   "scripts": {
     "start": "node server.js",
-    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
-    "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/redux.git"
+    "url": "https://github.com/vincentaudebert/react-redux-exercise.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/reactjs/redux/issues"
+    "url": "https://github.com/vincentaudebert/react-redux-exercise/issues"
   },
-  "homepage": "http://redux.js.org",
+  "homepage": "https://github.com/vincentaudebert/react-redux-exercise",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "keymirror": "^0.1.1",
