@@ -14,20 +14,20 @@ export const BOX_TICKED = 'BOX_TICKED';
 // and then returns an object with a type (mandatory)
 // and some other params which will be used inside the reducer
 export const changeValue = (event) => {
-  return {
-    type: CHANGE_VALUE,
-    newValue: event.target.value,
-  }
-}
+    return {
+        type: CHANGE_VALUE,
+        newValue: event.target.value,
+    };
+};
 
-// IMPLEMENT ME
+// TODO: IMPLEMENT ME
 // I work with /reducers/exercise1.js
 export const buttonClicked = () => {
-}
+};
 
 export const boxTicked = (event) => {
-  return {
-    type: BOX_TICKED,
-    hasTickedBox: event.target.value,
-  }
-}
+    return {
+        type: BOX_TICKED,
+        hasTickedBox: event.target.value,
+    };
+};

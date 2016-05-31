@@ -11,6 +11,10 @@ Exercise to understand better react-redux, how it works and how to use it.
 
 `npm run start`
 
+And if you want some `eslint` love:
+
+`npm install -g eslint eslint-config-airbnb`
+
 ## Redux
 
 ### with images

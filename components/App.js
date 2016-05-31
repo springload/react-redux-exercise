@@ -17,7 +17,7 @@ const App = React.createClass({
 
                 <h1>Exercise 3</h1>
 
-                <div style={{marginBottom: '10px'}}>
+                <div style={{ marginBottom: '10px' }}>
                     <i>
                         Build me from scratch!<br />
                         I need to be a select field which will display the new selected value<br />

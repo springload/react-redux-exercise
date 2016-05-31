@@ -15,17 +15,22 @@ class ExerciseZero extends React.Component {
         return (
             <div>
                 <h1>Exercise 0</h1>
-                <div style={{marginBottom: '10px'}}><i>Use this exercise as a reference for a working example. Follow me through the file comments.<br />
-                Meet me in /index.js</i></div>
-                <div style={{marginBottom: '5px'}}>Value: {value}</div>
+                <div style={{ marginBottom: '10px' }}>
+                    <i>
+                        Use this exercise as a reference for a working example.
+                        Follow me through the file comments.<br />
+                        Meet me in /index.js
+                    </i>
+                </div>
+                <div style={{ marginBottom: '5px' }}>Value: {value}</div>
                 <div>
                     <label>
-                        Change me: 
-                        <input 
-                            type="text" 
-                            name="exerciseZero" 
+                        Change me:
+                        <input
+                            type="text"
+                            name="exerciseZero"
                             value={value}
-                            onChange={changeValue} 
+                            onChange={changeValue}
                         />
                     </label>
                 </div>
@@ -34,7 +39,7 @@ class ExerciseZero extends React.Component {
     }
 }
 
-// it's considered better practice to specify into 
+// it's considered better practice to specify into
 // the component all the props you are expecting.
 ExerciseZero.propTypes = {
     value: React.PropTypes.string.isRequired,

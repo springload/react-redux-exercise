@@ -1,18 +1,18 @@
 import { BUTTON_CLICKED } from '../actions/';
 
 const initialState = {
-  name: '',
+    name: '',
 };
 
 const exercise = (state = initialState, action) => {
-  switch (action.type) {
+    switch (action.type) {
     case BUTTON_CLICKED:
-      return Object.assign({}, state, {
-        name: action.buttonWhoGotClickedName,
-      })
+        return Object.assign({}, state, {
+            name: action.buttonWhoGotClickedName,
+        });
     default:
-      return state
-  }
-}
+        return state;
+    }
+};
 
-export default exercise
+export default exercise;

@@ -18,7 +18,8 @@ const mapStateToProps = (state) => {
 
 // Here are the methods we want to give to the component.
 // These methods dispatch (send to the store) actions,
-// that will then be processed by Redux reducers (functions that receive an action and change the store data accordingly).
+// that will then be processed by Redux reducers 
+// (functions that receive an action and change the store data accordingly).
 // We _map_ actions (well, dispatched actions) to a component's props.
 const mapDispatchToProps = (dispatch) => {
     return {

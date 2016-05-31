@@ -11,16 +11,9 @@ export default function configureStore(initialState) {
 
     const store = createStore(rootReducer, initialState, compose(
         applyMiddleware(...middleware),
+        // Useful for debugging, see: https://github.com/zalmoxisus/redux-devtools-extension
         window.devToolsExtension ? window.devToolsExtension() : func => func
     ));
-
-    if (module.hot) {
-        // Enable Webpack hot module replacement for reducers
-        module.hot.accept('../reducers', () => {
-            const nextRootReducer = require('../reducers'); // eslint-disable-line global-require
-            store.replaceReducer(nextRootReducer);
-        });
-    }
 
     return store;
 }

@@ -4,9 +4,9 @@ import * as actions from '../actions';
 
 const mapStateToProps = (state) => {
     return {
-        // uncomment me when you start the exercise 2
+        // TODO: uncomment me when you start the exercise 2
         // hasTickedBox: state.exercise2.hasTickedBox,
-        // delete me when you start the exercise 2
+        // TODO: delete me when you start the exercise 2
         hasTickedBox: 'false',
     };
 };
