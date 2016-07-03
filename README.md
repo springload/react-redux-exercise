@@ -27,6 +27,10 @@ Source http://staltz.com/unidirectional-user-interface-architectures.html
 
 Source http://blog.tighten.co/react-101-using-redux
 
+![alt Redux image](./readme/redux3.png)
+
+Source https://www.reddit.com/r/webdev/comments/4r1947/i_am_working_on_a_reactredux_video_tutorial/
+
 ### with words
 
 Don't be afraid by these images if you find them complicated.
