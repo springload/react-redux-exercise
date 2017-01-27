@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React redux exercise",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "contributors": [
     {
       "name": "Thibaud Colas"
-    },
+    }
   ],
   "homepage": "https://github.com/springload/react-redux-exercise",
   "dependencies": {
