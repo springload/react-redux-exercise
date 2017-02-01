@@ -3,17 +3,36 @@ Exercise to understand better react-redux, how it works and how to use it.
 
 **If you like this repo and/or learnt something from it, please give us a star :) Thanks!**
 
-## Install
+## Get started
 
-`git clone https://github.com/springload/react-redux-exercise.git`
+### Prerequisites
 
-`cd react-redux-exercise`
+This project uses [nvm](https://github.com/creationix/nvm). 
 
-`npm install`
+You need to have it installed on your machine.
 
-`npm run start`
+### Install
 
-And if you want some `eslint` love:
+To install our dependencies:
+
+```sh
+$ git clone https://github.com/springload/react-redux-exercise.git
+
+$ cd react-redux-exercise
+
+# Install the correct version of Node/NPM with nvm
+$ nvm install
+
+# Then, install all project dependencies.
+$ npm install
+
+# Then run the server
+$ npm run start
+
+# Open your browser to http://localhost:3000
+```
+
+And if you want some `eslint` love (and you should):
 
 `npm run lint .` (or specify the path to the file you want to check)
 
