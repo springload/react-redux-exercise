@@ -23,17 +23,16 @@
   "homepage": "https://github.com/springload/react-redux-exercise",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
-    "keymirror": "^0.1.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.1.2",
-    "redux": "^3.1.2",
-    "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0",
     "express": "^4.13.3",
-    "webpack": "^1.9.11",
-    "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.9.1"
+    "keymirror": "^0.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.0",
+    "redux-thunk": "^2.2.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",
@@ -50,8 +49,6 @@
     "eslint-plugin-react": "^6.9.0",
     "expect": "^1.8.0",
     "jsdom": "^5.6.1",
-    "mocha": "^2.2.5",
-    "node-libs-browser": "^0.5.2",
-    "react-addons-test-utils": "^0.14.7"
+    "node-libs-browser": "^0.5.2"
   }
 }

@@ -2,9 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
     entry: [
-        'webpack-hot-middleware/client',
         './index',
     ],
     output: {
@@ -14,7 +12,10 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
+        new webpack.SourceMapDevToolPlugin({
+            filename: '[file].map',
+            columns: false,
+        }),
     ],
     module: {
         loaders: [
