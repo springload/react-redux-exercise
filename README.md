@@ -36,6 +36,16 @@ And if you want some `eslint` love (and you should):
 
 `npm run lint .` (or specify the path to the file you want to check)
 
+### Debugging
+
+I highly recommend that you install the [Redux extension for Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+
+It looks like this: 
+
+![alt Extension image](./readme/extension.png)
+
+And it will help you a lot to debug and understand what's going with your code.
+
 ## Redux
 
 ### with images
