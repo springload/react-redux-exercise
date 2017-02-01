@@ -6,11 +6,11 @@
 // Meet me in ../reducers/exercise0.js once you've understood this file
 import actionTypes from './actionTypes';
 
-// This is an action
-// it get some params (here an event)
+// This is a function that creates an action
+// it get some data (here an event)
 // and then returns an object with a type (mandatory)
 // and some other params which will be used inside the reducer
-// In terms of syntax/structure it's following https://github.com/acdlite/flux-standard-action#flux-standard-action
+// It's following the FSA convention: https://github.com/acdlite/flux-standard-action#flux-standard-action
 export const changeValue = (event) => {
     return {
         type: actionTypes.CHANGE_VALUE,
