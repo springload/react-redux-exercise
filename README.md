@@ -5,7 +5,7 @@ If you like this repo and/or learnt something from it, please give us a star :) 
 
 ## Install
 
-`git clone https://github.com/vincentaudebert/react-redux-exercise.git`
+`git clone https://github.com/springload/react-redux-exercise.git`
 
 `cd react-redux-exercise`
 
