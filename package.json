@@ -1,9 +1,10 @@
 {
   "name": "react-redux-exercise",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React redux exercise",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,11 @@
     "react-redux": "^4.1.2",
     "redux": "^3.1.2",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "express": "^4.13.3",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.9.1"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",
@@ -38,14 +43,15 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-register": "^6.3.13",
     "cross-env": "^1.0.7",
+    "eslint": "https://registry.npmjs.org/eslint/-/eslint-3.14.1.tgz",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
     "expect": "^1.8.0",
-    "express": "^4.13.3",
     "jsdom": "^5.6.1",
     "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
-    "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.9.11",
-    "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.9.1"
+    "react-addons-test-utils": "^0.14.7"
   }
 }

@@ -8,7 +8,7 @@ const exercise = (state = initialState, action) => {
     switch (action.type) {
     case actionTypes.BUTTON_CLICKED:
         return Object.assign({}, state, {
-            name: action.buttonWhoGotClickedName,
+            name: action.payload.buttonWhoGotClickedName,
         });
     default:
         return state;

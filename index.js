@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import configureStore from './store/configureStore';
 import App from './components/App';
-
-const store = configureStore();
+import store from './store/configureStore';
 
 // This is the "root" of your React App
 // The render function bootstraps React onto the page, in a specific element (#root).
@@ -15,5 +13,5 @@ ReactDOM.render(
     <Provider store={store}>
         <App />
     </Provider>,
-    document.getElementById('root')
+    document.getElementById('root'),
 );

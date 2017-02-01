@@ -35,7 +35,7 @@ const mapDispatchToProps = (dispatch) => {
 // around the "dumb" React component.
 const IntelligentExerciseZero = connect(
     mapStateToProps,
-    mapDispatchToProps
+    mapDispatchToProps,
 )(ExerciseZero);
 
 export default IntelligentExerciseZero;

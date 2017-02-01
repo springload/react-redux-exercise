@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const IntelligentExerciseOne = connect(
     mapStateToProps,
-    mapDispatchToProps
+    mapDispatchToProps,
 )(ExerciseOne);
 
 export default IntelligentExerciseOne;

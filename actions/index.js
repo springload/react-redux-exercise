@@ -10,10 +10,13 @@ import actionTypes from './actionTypes';
 // it get some params (here an event)
 // and then returns an object with a type (mandatory)
 // and some other params which will be used inside the reducer
+// In terms of syntax/structure it's following https://github.com/acdlite/flux-standard-action#flux-standard-action
 export const changeValue = (event) => {
     return {
         type: actionTypes.CHANGE_VALUE,
-        newValue: event.target.value,
+        payload: {
+            newValue: event.target.value,
+        },
     };
 };
 
@@ -25,6 +28,8 @@ export const buttonClicked = () => {
 export const boxTicked = (event) => {
     return {
         type: actionTypes.BOX_TICKED,
-        hasTickedBox: event.target.value,
+        payload: {
+            hasTickedBox: event.target.value,
+        },
     };
 };

@@ -1,6 +1,8 @@
 # react-redux-exercise
 Exercise to understand better react-redux, how it works and how to use it.
 
+If you like this repo and/or learnt something from it, please give us a star :) Thanks!
+
 ## Install
 
 `git clone https://github.com/vincentaudebert/react-redux-exercise.git`
@@ -13,7 +15,7 @@ Exercise to understand better react-redux, how it works and how to use it.
 
 And if you want some `eslint` love:
 
-`npm install -g eslint eslint-config-airbnb`
+`npm run lint .` (or specify the path to the file you want to check)
 
 ## Redux
 

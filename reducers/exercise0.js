@@ -28,7 +28,7 @@ const exercise0 = (state = initialState, action) => {
     switch (action.type) {
     case actionTypes.CHANGE_VALUE:
         return Object.assign({}, state, {
-            value: action.newValue,
+            value: action.payload.newValue,
         });
     default:
         return state;

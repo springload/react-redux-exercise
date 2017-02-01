@@ -4,10 +4,7 @@ import * as actions from '../actions';
 
 const mapStateToProps = (state) => {
     return {
-        // TODO: uncomment me when you start the exercise 2
-        // hasTickedBox: state.exercise2.hasTickedBox,
-        // TODO: delete me when you start the exercise 2
-        hasTickedBox: 'false',
+        hasTickedBox: state.exercise2.hasTickedBox,
     };
 };
 
@@ -21,7 +18,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const IntelligentExerciseTwo = connect(
     mapStateToProps,
-    mapDispatchToProps
+    mapDispatchToProps,
 )(ExerciseTwo);
 
 export default IntelligentExerciseTwo;
