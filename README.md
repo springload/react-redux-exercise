@@ -1,7 +1,7 @@
 # react-redux-exercise
 Exercise to understand better react-redux, how it works and how to use it.
 
-If you like this repo and/or learnt something from it, please give us a star :) Thanks!
+**If you like this repo and/or learnt something from it, please give us a star :) Thanks!**
 
 ## Install
 
@@ -21,6 +21,10 @@ And if you want some `eslint` love:
 
 ### with images
 
+![alt Redux image](./readme/redux3.png)
+
+Source https://www.reddit.com/r/webdev/comments/4r1947/i_am_working_on_a_reactredux_video_tutorial/
+
 ![alt Redux image](./readme/redux1.jpg)
 
 Source http://staltz.com/unidirectional-user-interface-architectures.html
@@ -29,9 +33,6 @@ Source http://staltz.com/unidirectional-user-interface-architectures.html
 
 Source http://blog.tighten.co/react-101-using-redux
 
-![alt Redux image](./readme/redux3.png)
-
-Source https://www.reddit.com/r/webdev/comments/4r1947/i_am_working_on_a_reactredux_video_tutorial/
 
 ### with words
 
