@@ -13,7 +13,7 @@ You need to have it installed on your machine.
 
 ### Install
 
-To install our dependencies:
+To clone the project on your machine, install the required dependencies and run the server, follow these commands:
 
 ```sh
 $ git clone https://github.com/springload/react-redux-exercise.git
