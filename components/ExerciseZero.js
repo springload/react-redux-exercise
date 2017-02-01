@@ -14,6 +14,8 @@ const propTypes = {
 // This is a "dumb" component: it just displays data and calls functions,
 // oblivious to the fact that Redux is used on the project.
 // It's basically just displaying HTML and using the given props.
+// The syntax is using ES6. To learn more about React Stateless components in ES6,
+// please check this link: https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc#.tw7p0usxv
 // Meet me in ../containers/IntelligentExerciseZero.js once you've understood this file
 const ExerciseZero = ({ value, changeValue }) => (
     <div>
