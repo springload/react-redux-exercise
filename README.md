@@ -1,5 +1,6 @@
 # react-redux-exercise
-Exercise to understand better react-redux, how it works and how to use it.
+
+> Exercise to understand better React and Redux, how they work and how to use them.
 
 **If you like this repo and/or learnt something from it, please give us a star :) Thanks!**
 
