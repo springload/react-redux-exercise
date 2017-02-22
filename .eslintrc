@@ -1,5 +1,9 @@
 {
     "extends": "airbnb",
+    "plugins": [
+        "react",
+        "import"
+    ],
     "rules": {
         "indent": [2, 4],
         "max-len": [1, 120, 4, {"ignoreUrls": true}],
