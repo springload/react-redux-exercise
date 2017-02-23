@@ -29,7 +29,7 @@ export const boxTicked = (event) => {
     return {
         type: actionTypes.BOX_TICKED,
         payload: {
-            hasTickedBox: event.target.value,
+            hasTickedBox: event.target.checked,
         },
     };
 };
